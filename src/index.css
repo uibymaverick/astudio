@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Neutra;
+  src: url('../public/fonts/NeutraText-Bold.otf');
+}
+
+@font-face {
+  font-family: NeutraBook;
+  src: url('../public/fonts/NeutraText-Book.otf');
+}
+
+@theme {
+  --font-bold: Neutra;
+  --font-default: NeutraBook;
+
+  --color-primaryBlack: #322625;
+  --color-primaryGrey: #ebebeb;
+  --color-primaryBlue: #c0e3e5;
+  --color-primaryYellow: #fdc936;
+}
+
+.input {
+  @apply ml-2 px-3 py-1 border border-primaryGrey rounded-md focus:outline-none focus:ring-2 focus:ring-primaryBlue;
+}
